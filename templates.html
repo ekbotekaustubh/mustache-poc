@@ -1,0 +1,40 @@
+<script id="templateGroup" type="x-tmpl-mustache">
+    <li class="list-item">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="flag-info d-flex align-items-center mb-2">
+                    <figure class="flag-img pr-3 mb-0">
+                        <img src="{{ flagImageUrl }}">
+                    </figure>
+                    <p class="mb-0">{{ name }}</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <span class="action-tag">New</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="d-flex vehicle-block-wrapper justify-content-start block-size-sm mb-2">
+                    <figure class="vehicle-img">
+                        <img src="{{ imageUrl }}" width="100px">
+                    </figure>
+                    <span class="vehicle-description pl-3">
+                        <h6 class="vehicle-ref">Ref No. {{ truckId }}</h6>
+                        <h5 class="vehicle-name">{{ title }} <br>{{ subTitle }}</h5>
+                        <h6 class="vehicle-info">{{ extraInfo }}</h6>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <a class="chat-link link-primary" href="#"><i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-underline mb-0">{{ messageHeadline }}</p>
+            </div>
+        </div>
+    </li>
+</script>
+
